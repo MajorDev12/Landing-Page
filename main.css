@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainFont: "Poppins", sans-serif; 
+    --secFont: "Georgia, serif"; 
+    --mainColor: #F8FBFE;     
+    --whiteText: #F8FBFE;     
+    --primaryColor: #3498db; 
+    --blueGradient: linear-gradient(90deg, rgba(0,74,143,1) 0%, rgba(20,104,173,1) 2%, rgba(52,152,219,1) 18%);
+    --secondaryColor: #001223;
+    --textSize: 1em;
+    --smallSize: 0.9em;
+    --bigSize: 4em;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: var(--mainFont);
+}
+header{
+    display: flex;
+    font-family: var(--mainFont);
+}
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+header nav .logo{
+    margin: 20px 5%;
+}
+header nav .navLinks ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: -5%;
+}
+header nav .navLinks ul li{
+    list-style: none;
+    padding-left: 20px;
+}
+header nav .navLinks ul li a{
+    text-decoration: none;
+    color: var(--secondaryColor);
+    font-size: var(--textSize);
+}
+header nav .callToAction .signup,
+header nav .callToAction .login{
+    margin-top: 20px;
+    margin-left: -5%;
+    padding: 8px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: var(--smallSize);
+    font-family: var(--mainFont);
+}
+header nav .callToAction .signup{
+    margin-right: 20px;
+    background: var(--blueGradient);
+    color: var(--whiteText);
+    border: 1px solid var(--primaryColor);
+}
+header nav .callToAction .login{
+    background: none;
+    border: 1px solid var(--secondaryColor);
+}
+
+.landingPage{
+    width: 100%;
+    height: 160vh;
+    position: relative;
+}
+.landingPage .innerDiv{
+    position: relative;
+    top: 2%;
+    left: 5%;
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landingPage .proofs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.landingPage .proofs p{
+    margin-right: 20px;
+}
+.landingPage .proofs .logos{
+    display: flex;
+    flex-direction: row;
+}
+.landingPage .proofs .logos .logo{
+    display: flex;
+    flex-direction: row;
+}
+.landingPage .proofs .logos .logo p{
+    margin-left: 2px;
+}
+.landingPage .highlight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondaryColor);
+    padding-bottom: 2%;
+    text-align: center;
+}
+.landingPage .highlight h1{
+    font-size: var(--bigSize);
+    width: 70%;
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+.landingPage .highlight p{
+    width: 35%;
+    font-weight: 500;
+    font-size: var(--textSize);
+}
+.landingPage .actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+}
+.landingPage .actions button{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: var(--whiteText);
+    font-size: var(--smallSize);
+    font-family: var(--mainFont);
+} 
+.landingPage .actions .signup{
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    border: 1px solid var(--primaryColor);
+    margin-right: 15px;
+} 
+.landingPage .actions .demo{
+    background-color: var(--secondaryColor);
+    color: var(--whiteText);
+}
+.landingPage .videoDiv{
+    width: 95%;
+    height: 100vh;
+    position: relative;
+    top: 2%;
+    left: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+.landingPage .videoDiv #myVideo{
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+.landingPage .videoDiv .svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8fbfe0e;
+}
+.landingPage .videoDiv .svg svg{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--textSize);
+}
